@@ -1,0 +1,64 @@
+digraph state {
+ graph [fontsize=12]
+rankdir=TB;
+"10" -> "Hello" [label = "magazinedelivery", color = "firebrick"];
+"1" -> "Beano" [label = "magazinedelivery", color = "firebrick"];
+"1" -> "Private_Eye" [label = "magazinedelivery", color = "firebrick"];
+"1" -> "New_Scientist" [label = "magazinedelivery", color = "firebrick"];
+"10" -> "Independent" [label = "newspaperdelivery", color = "sienna"];
+"2" -> "Telegraph" [label = "newspaperdelivery", color = "sienna"];
+"1" -> "Guardian" [label = "newspaperdelivery", color = "sienna"];
+"20" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"19" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"18" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"17" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"16" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"15" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"14" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"13" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"12" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"11" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"10" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"9" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"8" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"7" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"6" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"5" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"4" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"3" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"2" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"1" -> "ROOT-NODE" [label = "houseset", color = "SlateBlue4"];
+"20" -> "ROOT-NODE" [label = "maxhouses", color = "black"];
+"3" -> "ROOT-NODE" [label = "maxmagazines", color = "#efdf84"];
+"10" [color = "wheat3", style = "filled, solid", shape = "box"]
+"Hello" [color = "#efdf84", style = "filled, solid", shape = "box"]
+"1" [color = "wheat3", style = "filled, solid", shape = "box"]
+"Beano" [color = "#efdf84", style = "filled, solid", shape = "box"]
+"Private_Eye" [color = "#efdf84", style = "filled, solid", shape = "box"]
+"New_Scientist" [color = "#efdf84", style = "filled, solid", shape = "box"]
+"Independent" [color = "#bdef6b", style = "filled, solid", shape = "box"]
+"2" [color = "wheat3", style = "filled, solid", shape = "box"]
+"Telegraph" [color = "#bdef6b", style = "filled, solid", shape = "box"]
+"Guardian" [color = "#bdef6b", style = "filled, solid", shape = "box"]
+"20" [color = "wheat3", style = "filled, solid", shape = "box"]
+"ROOT-NODE" [color = "lightblue", style = "filled, solid", shape = "diamond"]
+"19" [color = "wheat3", style = "filled, solid", shape = "box"]
+"18" [color = "wheat3", style = "filled, solid", shape = "box"]
+"17" [color = "wheat3", style = "filled, solid", shape = "box"]
+"16" [color = "wheat3", style = "filled, solid", shape = "box"]
+"15" [color = "wheat3", style = "filled, solid", shape = "box"]
+"14" [color = "wheat3", style = "filled, solid", shape = "box"]
+"13" [color = "wheat3", style = "filled, solid", shape = "box"]
+"12" [color = "wheat3", style = "filled, solid", shape = "box"]
+"11" [color = "wheat3", style = "filled, solid", shape = "box"]
+"9" [color = "wheat3", style = "filled, solid", shape = "box"]
+"8" [color = "wheat3", style = "filled, solid", shape = "box"]
+"7" [color = "wheat3", style = "filled, solid", shape = "box"]
+"6" [color = "wheat3", style = "filled, solid", shape = "box"]
+"5" [color = "wheat3", style = "filled, solid", shape = "box"]
+"4" [color = "wheat3", style = "filled, solid", shape = "box"]
+"3" [color = "wheat3", style = "filled, solid", shape = "box"]
+subgraph "cluster_NEWSPAPER" {node [style=filled,color=white]; label="NEWSPAPER"; style=filled;color=lightgrey; Guardian; Independent; Telegraph; }
+subgraph "cluster_MAGAZINE" {node [style=filled,color=white]; label="MAGAZINE"; style=filled;color=lightgrey; New_Scientist; Private_Eye; Beano; Hello; }
+subgraph "cluster_REPORT" {node [style=filled,color=white]; label="REPORT"; style=filled;color=lightgrey; }
+}
